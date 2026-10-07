@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc-o-Magic ✨</title>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="background-effects">
+    <div class="bubble bubble-1"></div>
+    <div class="bubble bubble-2"></div>
+    <div class="bubble bubble-3"></div>
+    <div class="bubble bubble-4"></div>
+    <div class="bubble bubble-5"></div>
+
+    <div class="orbit orbit-left">
+        <span class="orbit-square square-1"></span>
+        <span class="orbit-square square-2"></span>
+    </div>
+
+    <div class="orbit orbit-right">
+        <span class="orbit-square square-3"></span>
+        <span class="orbit-square square-4"></span>
+    </div>
+
+    <div class="star star-1">✦</div>
+    <div class="star star-2">✧</div>
+    <div class="star star-3">✦</div>
+    <div class="star star-4">✧</div>
+</div>
+
+<section class="welcome-screen" id="welcomeScreen">
+
+    <div class="welcome-card">
+
+        <div class="mini-decoration">✦ ✧ ✦</div>
+
+        <div class="calculator-mascot">
+            <div class="mascot-screen">:D</div>
+            <div class="mascot-body">
+                <span>•</span>
+                <span>•</span>
+            </div>
+        </div>
+
+        <p class="tiny-title">WELCOME TO</p>
+
+        <h1>
+            Calc<span>o</span>-<br>
+            Magic!
+        </h1>
+
+        <p class="welcome-text">
+            A tiny calculator with a BIG personality.
+            Let's crunch some numbers! 🧮✨
+        </p>
+
+        <button class="start-button" id="startButton">
+            Let's Calculate!
+            <span>→</span>
+        </button>
+
+        <div class="welcome-doodles">
+            <span>+</span>
+            <span>×</span>
+            <span>÷</span>
+            <span>=</span>
+        </div>
+    </div>
+</section>
+
+<main class="calculator-page" id="calculatorPage">
+
+    <div class="calculator-wrapper">
+
+        <header class="calculator-header">
+            <div>
+                <p class="eyebrow">✦ CALC-O-MAGIC ✦</p>
+                <h2>Let's do some math!</h2>
+            </div>
+
+            <button class="back-button" id="backButton" title="Back to welcome page">
+                ↩
+            </button>
+        </header>
+
+        <section class="calculator">
+
+            <div class="display-container">
+                <div class="display-label">YOUR NUMBER ✨</div>
+
+                <div class="display" id="display">
+                    0
+                </div>
+
+                <div class="display-expression" id="expression"></div>
+            </div>
+
+            <div class="buttons">
+
+                <button class="calc-button utility clear" data-action="clear">
+                    AC
+                </button>
+
+                <button class="calc-button utility delete" data-action="delete">
+                    ←
+                </button>
+
+                <button class="calc-button operator percent" data-action="percent">
+                    %
+                </button>
+
+                <button class="calc-button operator" data-value="/">
+                    ÷
+                </button>
+
+                <button class="calc-button number" data-value="7">
+                    7
+                </button>
+
+                <button class="calc-button number" data-value="8">
+                    8
+                </button>
+
+                <button class="calc-button number" data-value="9">
+                    9
+                </button>
+
+                <button class="calc-button operator" data-value="*">
+                    ×
+                </button>
+
+                <button class="calc-button number" data-value="4">
+                    4
+                </button>
+
+                <button class="calc-button number" data-value="5">
+                    5
+                </button>
+
+                <button class="calc-button number" data-value="6">
+                    6
+                </button>
+
+                <button class="calc-button operator" data-value="-">
+                    −
+                </button>
+
+                <button class="calc-button number" data-value="1">
+                    1
+                </button>
+
+                <button class="calc-button number" data-value="2">
+                    2
+                </button>
+
+                <button class="calc-button number" data-value="3">
+                    3
+                </button>
+
+                <button class="calc-button operator" data-value="+">
+                    +
+                </button>
+
+                <button class="calc-button number zero" data-value="0">
+                    0
+                </button>
+
+                <button class="calc-button number" data-value=".">
+                    .
+                </button>
+
+                <button class="calc-button equals" data-action="calculate">
+                    =
+                </button>
+
+            </div>
+        </section>
+
+        <p class="keyboard-hint">
+            Tip: You can also use your keyboard! ⌨️
+        </p>
+
+    </div>
+</main>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
